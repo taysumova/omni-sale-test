@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,28 @@
     <title>Omni Sale</title>
     <link rel="stylesheet" href="build/css/style.css">
 </head>
+
 <body>
     <div class="app">
         <div class="form-wrapper">
             <a href="#" class="link link--back">Вернуться</a>
             <form action="#" class="form form--auth">
-                <input class="input input--number" type="number" placeholder="Номер телефона" required/>
-                <input class="input input--password" type="password" placeholder="Пароль" required/>
-                <label class="input--remember">
-                    <input type="checkbox" class="checkbox--remember" />
-                    Запомнить
-                </label>
-                <a href="#" class="link--forget">Забыл пароль</a>
-                <button class="button--enter">Войти</button>
+                <input class="input input--number input--active" type="text" placeholder="Номер телефона" required />
+                <input class="input input--password" type="password" placeholder="Пароль" required />
+                <div class="form__helpers">
+                    <label class="switch">
+                        <span class="switch__label">Запомнить</span>
+                        <input type="checkbox" class="switch__checkbox" />
+                        <span class="switch__slider"></span>
+                    </label>
+                    <a href="#" class="link link--remember">Забыл пароль</a>
+                </div>
+                <button class="button">Войти</button>
             </form>
         </div>
     </div>
 
     <script src="build/js/app.js"></script>
 </body>
+
 </html>
