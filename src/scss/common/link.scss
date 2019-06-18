@@ -27,8 +27,8 @@
     display: flex;
     position: relative;
     flex-direction: row;
-    letter-spacing: 0.1;
     text-align: center;
+    padding-top: 3px;
     &:after {
         position: absolute;
         content: "";
