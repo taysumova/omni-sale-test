@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var a=document.getElementsByClassName("input--password")[0],t=[];a.addEventListener("keyup",function(e){return function(e){var n=a.value;n&&"Backspace"!==e.key?(t.push(n[n.length-1]),a.value=t.map(function(e){return"*"}).join("")):"Backspace"===e.key&&t.pop();console.log(n+" :val"),console.log(t+" :actual")}(e)});
