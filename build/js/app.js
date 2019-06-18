@@ -1,1 +1,1 @@
-"use strict";function o(o,n){return o/n}console.log(o(4,2)),console.log(o(4,2)),console.log(o(4,2)),console.log([2,6,9,10].map(function(o){return o+o}));
+"use strict";

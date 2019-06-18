@@ -14,11 +14,22 @@
     text-align: center;
     height: 48px;
     outline: none;
-}
-
-.input--active {
-    background-color: #fff;
-    color: rgba($color: #000, $alpha: .4);
+    &:focus,
+    &:active {
+      background-image: none;
+      background-color: #fff;
+      color: #000;
+    }
+    &--checked {
+        background: url('../../../img/icons/checked.svg') no-repeat 95% center;
+        padding-right: 45px;
+        color: #fff;
+    }
+    &--invalid {
+        background: url('../../../img/icons/attention.svg') no-repeat 98% center;
+        background-color: #fff;
+        color: #b40000;
+    }
 }
 
 .switch {
