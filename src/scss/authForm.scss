@@ -1,5 +1,4 @@
 .form-wrapper {
-    // background: linear-gradient(rgba(250, 250, 250, 0.9), rgba(250, 250, 250, 0.9)), url('../../img/icons/rabbit.png') no-repeat center 45px;
     background: rgba(0, 0, 0, 0.2)  url('../../img/icons/rabbit.png') no-repeat center 45px;
     box-shadow: 0px 2px 36px rgba(0,0,0,0.7);
     border-radius: 4px;
@@ -10,8 +9,8 @@
     width: 100%;
     &:hover,
     &:active {
-       // background-color:rgba(240, 240, 240, 0.1);
-       background:  url('../../img/icons/rabbit.png') no-repeat center 45px, url('../../img/bg.svg');
+       background:  url('../../img/icons/rabbit.png') no-repeat center 45px, url('../../img/small-bg.jpg');
+       background-size: auto, cover;
     }
 }
 

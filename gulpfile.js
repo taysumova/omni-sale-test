@@ -16,7 +16,9 @@ const cssFiles = [
 ];
 
 const jsFiles = [
-    './src/js/**/*.js'
+    './src/js/passwordReplace.js',
+    './src/js/formValidation.js',
+    './src/js/submitForm.js'
 ];
 
 function styles() {
@@ -24,7 +26,7 @@ function styles() {
                 .pipe(sass().on('error', sass.logError))
                 .pipe(concat('style.css'))
                 .pipe(autoprefixer({
-                    browsers: ['> 0.1%'], 
+                    overrideBrowserslist: ['> 0.1%'], 
                     cascade: false
                 }))
                 .pipe(cleanCSS({
