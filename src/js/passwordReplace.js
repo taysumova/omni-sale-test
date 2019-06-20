@@ -1,16 +1,16 @@
 const passwordInput = document.getElementsByClassName("input--password")[0];
 let actualPassword = [];
 
-passwordInput.addEventListener("keyup", (event) => replacePassword(event));
+passwordInput.addEventListener("input", (event) => replacePassword(event));
 
 function replacePassword(event) {
   let passwordValue = passwordInput.value;
-  if(passwordValue && event.key !== "Backspace") {
+   console.log(event);
+  if(passwordValue && event.inputType !== "deleteContentBackward") {
     actualPassword.push(passwordValue[passwordValue.length - 1]);
     passwordInput.value = actualPassword.map(i => i = "*").join('');
-  } else if (event.key === "Backspace") {
+  } else if (event.inputType === "deleteContentBackward") {
     actualPassword.pop();
   }
-  console.log(passwordValue + " :val");
-  console.log(actualPassword + " :actual");
+  console.log(actualPassword);
 }
