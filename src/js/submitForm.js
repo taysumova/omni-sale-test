@@ -1,5 +1,10 @@
-const divide = (first, second) => {
-    return first / second;
-}
+loginButton.addEventListener("click", (e) => submitLoginForm(e));
 
-const mapArray = arr => arr.map(item => item + item)
+const submitLoginForm = (e) => {
+    const rememberMeInput = document.getElementsByClassName("switch__checkbox")[0].checked;
+    
+    e.preventDefault();
+    console.log(rememberMeInput);
+    console.log(actualPassword.join(''));
+    console.log(numberInput.value);
+}

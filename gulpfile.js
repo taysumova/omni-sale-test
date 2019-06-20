@@ -16,8 +16,9 @@ const cssFiles = [
 ];
 
 const jsFiles = [
-    './src/js/passwordReplace.js',
     './src/js/formValidation.js',
+    './src/js/passwordReplace.js',
+    './src/js/autocompleteNumber.js',
     './src/js/submitForm.js'
 ];
 
