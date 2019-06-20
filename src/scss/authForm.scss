@@ -1,6 +1,7 @@
 .form-wrapper {
     // background: linear-gradient(rgba(250, 250, 250, 0.9), rgba(250, 250, 250, 0.9)), url('../../img/icons/rabbit.png') no-repeat center 45px;
     background: rgba(0, 0, 0, 0.2)  url('../../img/icons/rabbit.png') no-repeat center 45px;
+    box-shadow: 0px 2px 36px rgba(0,0,0,0.7);
     border-radius: 4px;
     max-width: 626px;
     height: 434px;
@@ -9,12 +10,12 @@
     width: 100%;
     &:hover,
     &:active {
-       background-color:rgba(240, 240, 240, 0.1);
+       // background-color:rgba(240, 240, 240, 0.1);
+       background:  url('../../img/icons/rabbit.png') no-repeat center 45px, url('../../img/bg.svg');
     }
 }
 
 .form--auth {
-//   box-shadow: 0px 2px 36px rgba(0,0,0,0,7);
     display: flex;
     flex-direction: column;
     justify-content: center;

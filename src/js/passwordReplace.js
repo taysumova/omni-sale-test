@@ -12,5 +12,11 @@ function replacePassword(event) {
   } else if (event.inputType === "deleteContentBackward") {
     actualPassword.pop();
   }
+
+  if(passwordValue.length) {
+    passwordInput.classList.add('input--password-active');
+  } else {
+    passwordInput.classList.remove('input--password-active');
+  }
   console.log(actualPassword);
 }

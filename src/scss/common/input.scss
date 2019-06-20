@@ -29,6 +29,15 @@
         background-color: #fff;
         color: #b40000;
     }
+    &--password {
+        &-active {
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 47px;
+            letter-spacing: 5px;
+            padding: 28px 0 12px;
+        }
+    }
 }
 
 .switch {
